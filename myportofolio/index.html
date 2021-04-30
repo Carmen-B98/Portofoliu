@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            margin:0;
+        }
+
+        nav{            
+            width: 100%;   
+            height: 0px;       
+            background-color:gainsboro;
+            float: left;
+            position: fixed;   
+        }
+
+        nav a{
+            text-decoration: none;
+            text-align: center;
+            padding: 14px 16px;
+            margin: auto;            
+            float: right;
+        }
+
+        img#logo {
+            border-radius: 50%;
+        }
+
+        .container {
+         position: relative;
+         text-align: center;
+         color: #616060;       
+        }
+
+        .centered {
+         position: absolute;
+         padding-top: 16%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+        }
+
+        .page1 h2{
+            flex: 1 0 100%; /* shorthand for: flex-grow:1;
+                                    flex-shrink: 0;
+                                    flex-basis: 100%; */
+            text-align: center;
+            padding-top: 10px;
+            color: #4c5454;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+
+        .page1{  
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        height: 720px;
+        flex-wrap: wrap; /* this makes it wrap */
+        background-color:whitesmoke;
+        
+        }
+
+        .page2{
+            background-color: whitesmoke;
+            text-align: center;               
+            padding-top: 50px;
+        }
+
+        img#img1:hover{
+            border: 2px solid rebeccapurple;
+        }
+
+        img#img2:hover{
+            border: 2px solid rebeccapurple;
+        }
+
+        img#img3:hover{
+            border: 2px solid rebeccapurple;
+        }
+
+        .overlay {          
+         background: rgba(0, 0, 0, 0.5); /* Black see-through */
+         color: #f1f1f1; 
+         width: 270px;
+         transition: .5s ease;
+         opacity:0;
+         color: white;
+         font-size: 20px;
+         padding: 20px;
+         text-align: center;          
+         bottom: 0;
+         
+        }
+
+        #id1:hover .overlay {
+          opacity: 1;
+          
+        }
+
+        #id4:hover .overlay {
+          opacity: 1;
+        }
+        
+        #id5:hover .overlay {
+          opacity: 1;
+        }
+
+        footer {
+        text-align: center;
+        padding: 3px;
+        background-color: #2b343b;
+        color: white;
+        }
+
+        .page3{
+            background-color: whitesmoke;
+            text-align: center;
+            height: 700px;            
+            margin-top: -19px;                    
+        }
+
+        table,  td {
+        border: transparent;       
+        border-spacing: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+        .socialmedia{
+            width: 600px;
+            height: 200px;
+            background-color: white;
+            padding-top: 10px;
+            box-shadow: 2px 2px 3px 3px gray;
+        }
+
+        .email{
+            width: 290px;
+            height: 200px;
+            background-color: white;
+            padding-top: 10px;
+            box-shadow: 2px 2px 3px 3px gray;
+        }
+
+        .tel{
+            width: 290px;
+            height: 200px;
+            background-color: white;
+            padding-top: 10px;
+            box-shadow: 2px 2px 3px 3px gray;
+        }
+
+        .mail{
+            width: 500px;
+            height: 400px;
+            background-color: white;
+            padding: 20px;
+            text-align: left;
+            box-shadow: 2px 2px 3px 3px gray;
+            
+            
+        }
+
+        img#imaginea1{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 10px;       
+        }
+
+        a.link{
+            display: inline;
+            padding:5px;
+        }
+
+        img.imagine:hover{
+            background-color:#fcd777;
+        }
+
+        
+
+      
+        
+
+    </style>
+    <body >
+    
+        <nav>
+            <a href="#contact">CONTACT</a>
+            <a href="#about">ABOUT</a>
+            <a href="">HOME</a>
+            
+            <img id="logo" src="images/me.jpg"  alt="My image" style="width: 40px; height: 30px; padding: 8px 30px;">  
+           
+        </nav>
+    
+    
+        <div class="container">           
+            <div class="centered" style="text-align: center;">
+                <h1>I'm Buzamurga Carmen. </h1>
+                <p>Nice to meet you !</p>
+             <!--   <audio controls autoplay style="opacity: 0.4;">
+                    <source src="music.ogg" type="audio/ogg">
+                    <source src="music.mp3" type="audio/mpeg">
+                </audio>  
+            -->              
+            </div>           
+        </div>
+
+        
+        <div>
+        <img src="images/15.jpeg" alt="Background image" style="width: 100%;height: 100%; margin-bottom: -5px;">
+        </div>
+        
+    
+        <div class="page1" id="about" >
+            <h2>A Few Things About Me</h2>
+            <div class="page2" style="text-align: center;">
+                <table cellpadding="10px;">
+            <tr>
+
+            
+               <td id="id1"><a href="about1.html" target="_self" style="text-decoration: none;"><img id="img1" src="images/studies.png" alt="Studies" style="height: 320px;width: 300px;"><div class="overlay">STUDIES</div></a></td>
+            
+
+               <td id="id4"><a href="about2.html" target="_self" style="text-decoration: none;"><img id="img1" src="images/hobbies.png" alt="Hobbies" style="height: 320px;width: 300px;"><div class="overlay">HOBBIES</div></a></td>
+
+
+               <td id="id5"><a href="about3.html" target="_self" style="text-decoration: none;"><img id="img1" src="images/skills.png" alt="Skills" style="height: 320px;width: 300px;"><div class="overlay">SKILLS</div></a></td>
+
+            </tr>
+                </table>
+            </div>
+        </div>
+        
+        
+        <div class="page3" id="contact" >
+            <br>
+            
+            <h3 style="color: #4c5454;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;padding-top: 10px;">Contact Me</h3>
+            <table >
+                <tr>
+                    <td colspan="2">
+                        <div class="socialmedia">
+                            <img src="images/socialprofile.png"  alt="Social Profiles" id="imaginea1" style="width: 20px;height: 20px;border:transparent; border-radius: 35%;padding: 12px 12px;background-color: #fcd777">
+                            <h5 style="text-align: center; margin-top: 0; padding-top:10px;color: gray;font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Social Profiles</h5>
+                            <a href="https://www.instagram.com/carmenbuzamurga/" target="_blank" class="link"><img src="images/instagram.png" alt="Instagram" class="imagine" style="width: 22px;height: 22px;border:thin solid gray; border-radius: 35%;padding: 5px 5px;"></a>
+                            <a href="https://www.linkedin.com/in/buzamurga-carmen-554878162/" target="_blank" class="link"><img src="images/linkedin.png" alt="Linkedin" class="imagine" style="width: 22px;height: 22px;border:1px solid gray; border-radius: 35%;padding: 5px 5px;"></a>
+                        </div>
+                     </td>
+                    <td rowspan="2">
+                        <div class="mail">
+                         <form action="mailto:carmenbuzamurga@yahoo.com" method="post" enctype="text/plain">
+                             
+                             <input type="text" name="name" placeholder="Your name" style="height: 35px;width: 50%;"><br>
+                             <br>
+                             <input type="text" name="subject" placeholder="Subject" style="height: 35px;width: 100%;"><br>
+                             <br>
+                             
+                             <textarea id="w3review" name="message" rows="8" style="width: 100%;" placeholder="Message"></textarea>
+                             
+                             <br>
+                             <br>
+                             
+                            <div style="text-align: center;">
+                             <input type="submit" value="Send Message" style="width: 40%;height: 35px;background-color: #80d0f5;border:thin;color: white;font-weight: bold;">
+                             <input type="reset" value="Reset" style="width: 40%;height: 35px;background-color: #80d0f5;border:thin;color: white;font-weight: bold;">
+                            </div>
+                             </form>
+     
+                        </div>
+                     </td>
+     
+                </tr>
+                <tr>
+                    <td>
+                        <div class="email">
+                         <img src="images/mail.png" alt="Email" id="imaginea1" style="width: 22px;height: 22px;border:transparent; border-radius: 35%;padding: 12px 12px;background-color: #fcd777">
+                         <h5 style="text-align: center; margin-top: 0; padding-top:10px;color: gray;font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Email Me</h5>
+                         <p style="font-size: 15px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> cbuzamurga@gmail.com </p>
+                        </div>
+                     </td>
+                    <td>
+                        <div class="tel">
+                         <img src="images/phone.png" alt="Phone" id="imaginea1" style="width: 20px;height: 20px;border:transparent; border-radius: 35%;padding: 12px 12px;background-color: #fcd777">
+                         <h5 style="text-align: center; margin-top: 0; padding-top:10px;color: gray;font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Call Me</h5>
+                         <p style="font-size: 15px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> 0749698554 </p>
+                        </div>
+                     </td>
+                    
+     
+                </tr>
+                <tr>
+     
+                </tr>
+     
+        
+               </table>
+    
+        </div>
+        
+    
+
+        
+
+        
+
+        
+
+        
+        
+    
+
+        
+
+
+        <footer>
+            <p>© 2021 Carmen. <br>
+           </p>
+        </footer>
+    </body>
+</html>

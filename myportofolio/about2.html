@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            background-color: #dce6df;
+        }
+
+        input[type="button"]{
+            float: right;
+            background-image: url('images/x.png');
+            width: 22px;
+            height: 23px;
+            border: none;
+            background-repeat: no-repeat;
+            background-color: transparent;
+        }
+
+        h2{
+            text-align: center;
+            color: #47594d;
+        }
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+          .tabel{
+              text-align: center;
+          }
+
+          .buton-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          }
+
+          .buton-content table {
+            padding: 12px 16px;
+            display: block;
+          }
+
+          .show {
+            display:block;
+          }
+
+          .buton{
+              background-color: whitesmoke;
+              text-align: center;   
+          }
+
+          .dot {
+            height: 10px;
+            width: 10px;
+            background-color: rgb(90, 124, 61);
+            border-radius: 50%;
+            display: inline-block;
+          }
+
+    </style>
+
+    <body>
+        <input type="button" value="" onclick="history.back(-1)" />
+        <br>
+        <h2><span>Hobbies</span></h2>
+        
+        <div class="tabel">
+            <p><span class="dot"></span> In my free time I like to draw, for this reason, I bought a graphic tablet, not a professional one, but one that I can draw when I want to relax.</p>
+            <button id="myBtn" class="buton">Click here!</button>
+            
+            <div id="myTable" class="buton-content">
+              <table cellpadding="0px"  cellspacing="0px" class="center">
+                <tr>
+                  <td> 
+                    <img src="images/imagine3.gif" style="height: 200px; width: 300px;">
+                    <img src="images/imagine2.jpg" style="height: 200px; width: 300px;">
+                  </td>
+          
+                  <tr>
+                  <td>
+                    <img src="images/imagine1.jpg" style="height: 200px; width: 603px;">
+                  </td>
+                  </tr>
+                </tr>
+              </table>
+            </div>
+        </div>
+
+<br>
+
+        <div class="tabel">
+            <p><span class="dot"></span> I also like to go for a walk, either on rollers or by bike. And when the weather is worse, I like to do sports at home.</p>
+            <button id="myBtn1" class="buton">Click here!</button>
+            <div id="myTable1" class="buton-content">
+              <table cellpadding="0px"  cellspacing="0px" class="center">
+                <tr>
+                  <td> 
+                    <img src="images/sport1.gif" style="height: 200px; width: 300px;">
+                    <img src="images/sportif.png" style="height: 200px; width: 300px;">
+                  </td>
+          
+                  <tr>
+                  <td>
+                    <img src="images/sport.jpg" style="height: 200px; width: 603px;">
+                  </td>
+                  </tr>
+                </tr>
+              </table>
+            </div>
+        </div>
+
+<br>
+
+        <div class="tabel">
+            <p><span class="dot"></span> Lately, I have discovered that I like to spend time in the kitchen. I like to cook sweets, but also main dishes.</p>
+            <button id="myBtn2" class="buton">Click here!</button>
+            <div id="myTable2" class="buton-content">
+              <table cellpadding="0px"  cellspacing="0px" class="center">
+                <tr>
+                  <td> 
+                    <img src="images/cooking.jpg" style="height: 200px; width: 300px;">
+                    <img src="images/cooking1.gif" style="height: 200px; width: 300px;">
+                  </td>
+          
+                  
+                </tr>
+              </table>
+            </div>
+        </div>
+
+
+        <script>
+    
+            document.getElementById("myBtn").onclick = function() {myFunction()};
+
+            document.getElementById("myBtn1").onclick = function() {myFunction1()};
+
+            document.getElementById("myBtn2").onclick = function() {myFunction2()};
+
+            function myFunction() {
+              document.getElementById("myTable").classList.toggle("show");
+            }
+            function myFunction1() {
+              document.getElementById("myTable1").classList.toggle("show");
+            }
+            function myFunction2() {
+              document.getElementById("myTable2").classList.toggle("show");
+            }
+          </script>
+
+
+    </body>
+</html>
